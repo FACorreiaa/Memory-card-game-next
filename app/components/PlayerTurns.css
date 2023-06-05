@@ -1,0 +1,41 @@
+.container {
+	text-align: center;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+
+span {
+	font-size: 20px;
+	font-weight: 400;
+	padding-right: 10px;
+	flex-direction: column;
+}
+
+.player-title {
+	font-size: 23px;
+	font-weight: bold;
+	margin: 5px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+	margin: 20px;
+}
+
+.player-turn {
+	margin: 25px;
+	font-size: 34px;
+	font-weight: bold;
+	background: -webkit-linear-gradient(#000, #e6e);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
