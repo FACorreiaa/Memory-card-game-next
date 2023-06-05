@@ -26,8 +26,8 @@ function PlayerTurns({
 		<div className="container">
 			<div className="row">
 				<div className="column">
-					<div className="player-container">
-						<h5 className="player-title">{playerOne}</h5>
+					<div className="player-container ">
+						<h5 className="player-title ">{playerOne}</h5>
 						<div>
 							<span>Turns: {playerOneTurn}</span>
 							<span>Points: {playerOnePoints}</span>
@@ -45,12 +45,12 @@ function PlayerTurns({
 				</div>
 			</div>
 			{isPlayerOneTurn ? (
-				<div className="player-turn">PLAYER ONE TURN</div>
+				<div className="player-turn sm:text-sm">PLAYER ONE TURN</div>
 			) : (
 				''
 			)}
 			{isPlayerTwoTurn ? (
-				<div className="player-turn">PLAYER TWO TURN</div>
+				<div className="player-turn sm:text-sm">PLAYER TWO TURN</div>
 			) : (
 				''
 			)}

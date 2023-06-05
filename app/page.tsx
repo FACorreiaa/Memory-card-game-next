@@ -157,32 +157,16 @@ export default function Home() {
 	return (
 		<main className="flex flex-col items-center justify-between min-h-screen p-24">
 			<div className="z-10 items-center justify-between w-full max-w-5xl font-mono text-sm lg:flex">
-				<Header />
-				<div className="fixed bottom-0 left-0 flex items-end justify-center w-full h-48 bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-					<a
-						className="flex gap-2 p-8 pointer-events-none place-items-center lg:pointer-events-auto lg:p-0"
-						href="https://github.com/FACorreiaa"
-						target="_blank"
-						rel="noopener noreferrer">
-						By
-						<Image
-							src="/vercel.svg"
-							alt="Vercel Logo"
-							className="dark:invert"
-							width={100}
-							height={24}
-							priority
-						/>
-					</a>
-				</div>
 				<div className="container">
-					<div>
-						<Button onClick={onHandleStartButton} className="button">
-							{renderButtonMessage}
-						</Button>
-						<Button onClick={onHandleStopButton} className="button">
-							Stop game
-						</Button>
+					<div className="text-center">
+						<div className="xs:inline-flex ">
+							<Button onClick={onHandleStartButton} className="button">
+								{renderButtonMessage}
+							</Button>
+							<Button onClick={onHandleStopButton} className="button">
+								Stop game
+							</Button>
+						</div>
 
 						<PlayerTurns
 							playerOne="Player 1"
